@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/pdf-file.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Free Browser side PDF-Compressor</title>
+  </head>
+  <body>
+    <header class="header">
+      <h1 class="logo"><a href="#">FRP</a></h1>
+      <nav class="nav-bar">
+        <ul class="main-nav">
+          <li><a href="#">Lang</a></li>
+          <li><a href="acceuil.html">Home</a></li>
+          <li class="dropdown">
+            <a href="#" id="toolsBtn">Tools ▾</a>
+            <ul class="dropdown-menu" id="toolsMenu">
+              <li><a href="img-to-pdf.html">img To PDF</a></li>
+              <li><a href="#">Word To PDF</a></li>
+              <li><a href="#">PPT To PDF</a></li>
+              <li><a href="merge-pdf.html">Merge PDF</a></li>
+              <li><a href="http://localhost:5173/ghostscript-pdf-compress.wasm/"> Compress PDF</a></li>
+            </ul>
+          </li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Sign in</a></li>
+        </ul>
+      </nav>
+</header>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>

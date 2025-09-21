@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Us</title>
+  <link rel="icon" href="img/fav.jpg">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="header">
+    <h1 class="logo"><a href="acceuil.html" class="a">FRP</a></h1>
+    <nav class="nav-bar">
+      <ul class="main-nav">
+          <li><a href="#" class="a">Lang</a></li>
+          <li><a href="acceuil.html" class="a">Home</a></li>
+          <li class="dropdown">
+            <a href="#" id="toolsBtn" class="a">Tools ▾</a>
+            <ul class="dropdown-menu" id="toolsMenu">
+              <li><a href="img-to-pdf.html" class="a">Image To PDF</a></li>
+              <li><a href="split_pdf.html" class="a">Split PDF</a></li>
+              <li><a href="Rotate_pdf.html" class="a">Rotate PDF</a></li>
+              <li><a href="merge-pdf.html" class="a">Merge PDF</a></li>
+              <li><a href="compres-pdf.html" class="a"> Compress PDF</a></li>
+            </ul>
+          </li>
+          <li><a href="about.html" class="a">About</a></li>
+          <li>
+          <button class="sign-in">
+            <a class="sign-in-txt" href="#">CONTACT</a>
+            <div class="icon">
+              <span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 36 36" fill="none">
+                  <path d="M1.05403 31.6175C0.271626 32.3972 0.271626 33.6614 1.05403 34.441C1.83644 35.2207 3.10497 35.2207 3.88737 34.441L1.05403 31.6175ZM35.5599 2.05152C35.5599 0.948871 34.6629 0.0549994 33.5564 0.0549994L15.5251 0.0549994C14.4187 0.0549994 13.5217 0.948871 13.5217 2.05152C13.5217 3.15416 14.4187 4.04804 15.5251 4.04804H31.5529V20.0202C31.5529 21.1228 32.4499 22.0167 33.5564 22.0167C34.6629 22.0167 35.5599 21.1228 35.5599 20.0202L35.5599 2.05152ZM3.88737 34.441L34.9731 3.46327L32.1397 0.639766L1.05403 31.6175L3.88737 34.441Z" fill="#F5A091" />
+                </svg>
+              </span>
+            </div>
+          </button>
+        </li>
+      </ul>
+    </nav>
+</header>
+
+<h1 class="tagline-sub" >About FRP</h1>
+<div style="margin: 2%; padding: 2%; border-radius: 5px; display: flex; flex-direction: row;">
+  <p style="color: aliceblue; font-size: 3em; margin: 4%;">Manage your files with   <span class="logo-span">FRP</span> — your simple, secure, and free solution for working with PDF documents.</p>
+  <img src="img/tsb.png" style="border-radius: 5px; width: 300px; height: 300px;  margin: 1%;">
+</div>
+
+
+<div style="margin: 2%; padding: 2%; border-radius: 5px; display: flex; flex-direction: row;">
+    <img src="img/laptop.jpeg" style="border-radius: 5px; width: 300px; height: 300px;  margin: 1%;">
+<p style="color: aliceblue; font-size: 3em; margin: 4%;">
+  Anytime, anywhere — students, teachers, and office workers can easily manage their files.
+</p>
+</div>
+<div class="card" style="height: auto; margin: 4%;">
+  <h1></h1>
+<p style="text-align: center;">At FRP, we believe managing files should be fast, accessible, and stress-free. That’s why we’ve built a suite of easy-to-use tools to help you handle your PDFs without downloading any software.
+
+<br>
+Whether you need to convert images to PDF, merge multiple PDFs, rotate pages, split large files, or compress PDFs for easier sharing — we’ve got you covered.
+
+<br>
+<strong>Our Tools:</strong>  <span style="color: #3bae7a;">IMAGE</span> TO <span class="pdf">PDF</span>, MERGE <span class="pdf">PDF</span>, ROTATE <span class="pdf">PDF</span> , SPLIT <span class="pdf">PDF</span>, COMPRESS <span class="pdf">PDF. </span>
+
+<br>
+Your privacy matters. All file processing is done securely, and we never store your documents all the work is done by you computer and your browser, this site is front-end based (no server is needed) .
+
+<br>
+Use FRP anytime, anywhere — on desktop or mobile — with no installations or sign-ups required.
+</p>
+</div>
+<script >document.getElementById("toolsBtn").addEventListener("click", function(e) {
+    e.preventDefault();
+    document.getElementById("toolsMenu").classList.toggle("show");
+});
+
+window.addEventListener("click", function(e) {
+    if (!e.target.closest(".dropdown")) {
+    document.getElementById("toolsMenu").classList.remove("show");
+    }
+});
+</script>
+</body>
+</html>
